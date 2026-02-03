@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - Fox Day</title>
+</head>
+<body>
+  <header>
+    <h1>Register for Fox Day</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="events.php">View Events</a> |
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <main>
+    <form action="process.php" method="POST">
+      <p>
+        <label>
+          Student Name (required):
+          <input type="text" name="name" />
+        </label>
+      </p>
+
+      <p>
+        <label>
+          Email (required):
+          <input type="email" name="email" />
+        </label>
+      </p>
+
+      <p>
+        <label>
+          Select an Event (required):
+          <select name="event">
+            <option value="">-- Choose one --</option>
+            <option value="Bus ride to the Beach">Bus ride to the Beach</option>
+            <option value="Picnic on Mills Lawn">Picnic on Mills Lawn</option>
+            <option value="Pool Activities">Pool Activities</option>
+            <option value="Games and Prizes">Games and Prizes</option>
+          </select>
+        </label>
+      </p>
+
+      <p>
+        Year:
+        <label><input type="radio" name="year" value="Freshman" /> Freshman</label>
+        <label><input type="radio" name="year" value="Sophomore" /> Sophomore</label>
+        <label><input type="radio" name="year" value="Junior" /> Junior</label>
+        <label><input type="radio" name="year" value="Senior" /> Senior</label>
+      </p>
+
+      <p>
+        <label>
+          What are you most excited about?
+          <br />
+          <textarea name="message" rows="4" cols="40"></textarea>
+        </label>
+      </p>
+
+      <p>
+        <label>
+          <input type="checkbox" name="secret" value="Yes" />
+          I promise to have fun for Fox Day
+        </label>
+      </p>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
